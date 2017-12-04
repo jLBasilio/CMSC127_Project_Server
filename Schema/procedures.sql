@@ -8,12 +8,12 @@ CREATE PROCEDURE insertnewSenator (
 	firstName VARCHAR(64), 
 	middleInitial VARCHAR(64), 
 	lastName VARCHAR(64), 
-	office VARCHAR(64),	
+	office VARCHAR(256),	
 	senatePosition VARCHAR(64),
 	directLine VARCHAR(20), 
 	trunkLine VARCHAR(20), 
-	email VARCHAR(64), 
-	website VARCHAR(64)
+	email VARCHAR(256), 
+	website VARCHAR(256)
 )
 BEGIN
 	declare id int; 
@@ -60,7 +60,7 @@ CREATE PROCEDURE insertnewHouseMember (
 	firstName VARCHAR(64),
 	middleInitial VARCHAR(64),
 	lastName VARCHAR(64),
-	office VARCHAR(64),
+	office VARCHAR(256),
 	province VARCHAR(64),
 	district VARCHAR(64),
 	directLine VARCHAR(20),

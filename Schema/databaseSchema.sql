@@ -14,18 +14,18 @@ CREATE TABLE Legislator(
 
 CREATE TABLE Senator(
 	legislatorId INT(4) NOT NULL,
-	office VARCHAR(256) NOT NULL,
+	office VARCHAR(999) NOT NULL,
 	senatePosition VARCHAR(30) NOT NULL,
 	directLine VARCHAR(20) NOT NULL,
 	trunkLine VARCHAR(20) NOT NULL,
-	email VARCHAR(30) NOT NULL,
-	website VARCHAR(30),
+	email VARCHAR(256) NOT NULL,
+	website VARCHAR(256),
 	CONSTRAINT Senator_legislatorId_fk FOREIGN KEY(legislatorId) REFERENCES Legislator(legislatorId)
 );
 
 CREATE TABLE HouseMember(
 	legislatorId INT(4) NOT NULL,
-	office VARCHAR(256) NOT NULL,
+	office VARCHAR(999) NOT NULL,
 	province VARCHAR(30) NOT NULL,
 	district VARCHAR(10) NOT NULL,
 	directLine VARCHAR(20) NOT NULL, 
